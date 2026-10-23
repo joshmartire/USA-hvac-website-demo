@@ -1,0 +1,33 @@
+PASS Opening animation plays when landing on /services/furnace-installation/ and clears itself
+PASS Intro dial counts up while playing
+PASS Intro does not replay on the next page in the same session
+PASS Intro skipped when the URL has a #hash
+PASS Intro skipped for reduced motion
+PASS A click skips the intro
+PASS Hero airflow canvas is drawing
+PASS Home page layout shift (CLS) 0.005 < 0.1
+PASS Pinned sequence steps through all five stages and builds the drawing
+PASS Services dropdown opens and stays inside the window
+PASS Escape closes the dropdown
+PASS Hero system picker opens the estimate with that system selected
+PASS Default estimate matches config ($11,200 – $14,300)
+PASS Every system × home size × efficiency combination matches the config (60 checked)
+PASS Add-ons are added to the estimate
+PASS Ductless: priced per zone; home size and duct add-ons hidden
+PASS Lead form opens with the system, options and estimate filled in
+PASS Empty estimate form shows errors and focuses the first field
+PASS Repair-or-replace check flips at the configured threshold
+PASS Phones: live price bar shows while the result card is off screen
+PASS Contact form: empty submit shows errors on required fields
+PASS Contact form: invalid email message
+PASS No horizontal scrolling at 390px on 12 key pages
+PASS Mobile menu opens from the burger button
+PASS Mobile call bar appears after scrolling
+PASS axe WCAG 2.1 AA on /: 0 violations
+PASS axe WCAG 2.1 AA on /system-estimate/: 0 violations
+PASS axe WCAG 2.1 AA on /services/furnace-installation/: 0 violations
+PASS axe WCAG 2.1 AA on /contact/: 0 violations
+PASS axe WCAG 2.1 AA on /service-areas/novi/: 0 violations
+PASS No JavaScript errors in the console (0)
+
+31 passed, 0 failed

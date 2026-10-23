@@ -1,0 +1,209 @@
+{
+  "_README": "US version (Michigan sample). province = the state code (e.g. MI). locale = html language (en-US). temps = the cold/hot numbers in the hero and no-heat band and the thermostat intro (unit F or C, from = starting reading, set = set point). Edit these values for each client, then run: python3 _build/build.py && python3 _build/qa.py. Values marked SAMPLE must be replaced before launch. Keep demo_mode true until real client details are in; it adds noindex to every page and the yellow demo banner. accent: brand colour #rrggbb used for buttons and highlights (the build stops if it is too dark to read). heat: the warm second colour used for heating visuals (#rrggbb). logo: path to the client's logo, e.g. assets/img/client/logo.png (transparent PNG best); empty = built-in mark + name. services: remove any slug the client does not offer, then fix any sentences listed in _build/removed-service-mentions.txt. photos: the client's own job photos only (see _build/photos.py). intro: false turns the opening animation off; intro_scope 'all' plays it on whichever page a visitor lands on first, 'home' limits it to the home page. hero_fx: false turns off the animated airflow behind the home hero. emergency_24_7: true ONLY if the client really answers no-heat calls around the clock; it changes the wording of the no-heat band. estimator: see the _README inside it.",
+  "demo_mode": true,
+  "business_name": "Kelvin Heating & Cooling",
+  "legal_name": "Kelvin Heating & Cooling",
+  "short_tagline": "Heating & Cooling",
+  "region_label": "Metro Detroit",
+  "province": "MI",
+  "country": "US",
+  "locale": "en-US",
+  "temps": {
+    "unit": "F",
+    "cold": -10,
+    "hot": 95,
+    "set": 70,
+    "from": 41
+  },
+  "accent": "#3cb4ff",
+  "heat": "#ff6a2b",
+  "logo": "",
+  "intro": true,
+  "intro_scope": "all",
+  "hero_fx": true,
+  "emergency_24_7": false,
+  "services": [
+    "furnace-installation",
+    "furnace-repair",
+    "heat-pumps",
+    "boiler-services",
+    "ac-installation",
+    "ac-repair",
+    "ductless-mini-splits",
+    "indoor-air-quality",
+    "ductwork",
+    "duct-cleaning",
+    "hvac-maintenance",
+    "water-heaters",
+    "smart-thermostats",
+    "commercial-hvac"
+  ],
+  "photos": [],
+  "domain": "https://rankboss-hvac-us.pages.dev",
+  "base_path": "/",
+  "phone_display": "(248) 555-0163",
+  "phone_e164": "+12485550163",
+  "email": "info@example.com",
+  "address": null,
+  "_address_example": {
+    "street": "123 Example St",
+    "city": "Windsor",
+    "region": "ON",
+    "postal": "N9A 0A0"
+  },
+  "hours": [
+    {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "label": "Monday to Friday",
+      "open": "07:30",
+      "close": "18:00"
+    },
+    {
+      "days": [
+        "Saturday"
+      ],
+      "label": "Saturday",
+      "open": "08:00",
+      "close": "14:00"
+    }
+  ],
+  "hours_note": "Installations and home visits by appointment",
+  "cta_label": "Get a Free Quote",
+  "form_endpoint": "https://formsubmit.co/info@example.com",
+  "form_provider_name": "FormSubmit (formsubmit.co)",
+  "google_business_profile_url": "",
+  "social_profiles": [],
+  "google_site_verification": "",
+  "privacy_contact": "info@example.com",
+  "legal_jurisdiction": "Michigan",
+  "policy_effective_date": "October 22, 2026",
+  "estimator": {
+    "_README": "Instant system estimate (/system-estimate/). Set the client's real installed prices before launch. Everything runs in the visitor's browser; nothing is sent until they submit the form. systems: each system type the client installs, with base = the typical installed price in USD for a mid-size home (1,200-2,000 sq ft) at the standard efficiency tier, including removal of old equipment and normal venting/connection work. For mini-splits, extra_zone = added price per additional indoor head. Remove a system the client doesn't install. home_sizes / tiers: price_mult per option. addons: optional extras with a flat price. range_pct = how far the low/high ends sit from the middle (12 = -12%/+12%). minimum_job = smallest replacement job the client takes. round_to = rounding for displayed numbers. repair_rule: the 'age x repair cost' rule-of-thumb threshold used by the repair-or-replace check; set enabled false to hide that check.",
+    "enabled": true,
+    "currency": "USD",
+    "range_pct": 12,
+    "round_to": 100,
+    "minimum_job": 3500,
+    "systems": [
+      {
+        "id": "furnace",
+        "label": "Furnace",
+        "hint": "High-efficiency gas furnace",
+        "base": 5200,
+        "icon": "furnace",
+        "service": "furnace-installation"
+      },
+      {
+        "id": "ac",
+        "label": "Central AC",
+        "hint": "Air conditioner + matched coil",
+        "base": 5900,
+        "icon": "ac",
+        "service": "ac-installation"
+      },
+      {
+        "id": "furnace-ac",
+        "label": "Furnace + AC",
+        "hint": "Full heating & cooling swap",
+        "base": 10900,
+        "icon": "combo",
+        "service": "furnace-installation"
+      },
+      {
+        "id": "heat-pump",
+        "label": "Heat pump",
+        "hint": "Cold-climate, ducted, keeps furnace backup",
+        "base": 12900,
+        "icon": "heatpump",
+        "service": "heat-pumps"
+      },
+      {
+        "id": "mini-split",
+        "label": "Ductless",
+        "hint": "Mini-split heat pump, 1 zone",
+        "base": 4900,
+        "extra_zone": 2700,
+        "max_zones": 5,
+        "icon": "minisplit",
+        "service": "ductless-mini-splits"
+      }
+    ],
+    "default_system": "furnace-ac",
+    "home_sizes": [
+      {
+        "id": "s",
+        "label": "Under 1,200 sq ft",
+        "price_mult": 0.9
+      },
+      {
+        "id": "m",
+        "label": "1,200–2,000 sq ft",
+        "price_mult": 1.0
+      },
+      {
+        "id": "l",
+        "label": "2,000–3,000 sq ft",
+        "price_mult": 1.14
+      },
+      {
+        "id": "xl",
+        "label": "Over 3,000 sq ft",
+        "price_mult": 1.3
+      }
+    ],
+    "default_size": "m",
+    "tiers": [
+      {
+        "id": "standard",
+        "label": "Standard",
+        "hint": "Reliable, single-stage",
+        "price_mult": 1.0
+      },
+      {
+        "id": "high",
+        "label": "High efficiency",
+        "hint": "Two-stage, quieter, lower bills",
+        "price_mult": 1.17
+      },
+      {
+        "id": "premium",
+        "label": "Premium",
+        "hint": "Variable speed, top efficiency",
+        "price_mult": 1.38
+      }
+    ],
+    "default_tier": "high",
+    "addons": [
+      {
+        "id": "thermostat",
+        "label": "Smart thermostat",
+        "price": 350
+      },
+      {
+        "id": "humidifier",
+        "label": "Whole-home humidifier",
+        "price": 650
+      },
+      {
+        "id": "filter",
+        "label": "Media air cleaner",
+        "price": 480
+      },
+      {
+        "id": "uv",
+        "label": "UV coil light",
+        "price": 600
+      }
+    ],
+    "repair_rule": {
+      "enabled": true,
+      "threshold": 5000
+    }
+  }
+}

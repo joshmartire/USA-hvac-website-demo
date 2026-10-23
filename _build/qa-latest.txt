@@ -1,0 +1,33 @@
+PASS  Internal links and assets: 0 broken
+PASS  Orphan pages (no incoming internal links): 0
+PASS  Lowest incoming-link counts: thank-you/index.html (0), services/commercial-hvac/canton/index.html (7), services/commercial-hvac/novi/index.html (7), services/commercial-hvac/troy/index.html (7), services/water-heaters/canton/index.html (9)
+PASS  Unique titles: 69 indexable pages, 0 duplicates
+PASS  Unique meta descriptions: 69 indexable pages, 0 duplicates
+PASS  Meta description present on all indexable pages (0 missing)
+PASS  Titles over 65 characters: 0
+PASS  Descriptions over 160 characters: 0
+PASS  Exactly one H1 per page: 71/71
+PASS  No duplicate element IDs (0 pages with duplicates)
+PASS  Images missing alt attribute: 0
+PASS  Form fields with an associated label: 0 unlabelled
+PASS  Canonical URLs match file paths on https://rankboss-hvac-us.pages.dev: 0 mismatches
+PASS  og:url matches canonical on every page (0 mismatches)
+PASS  sitemap.xml valid XML, 69 URLs; not-in-site 0, missing 0, duplicates 0
+PASS  robots.txt allows crawling and references the canonical sitemap
+PASS  JSON-LD parses on all pages (0 errors). Types: BreadcrumbList ×69, ContactPage ×1, HVACBusiness ×1, ItemList ×1, Service ×56, WebApplication ×1, WebSite ×1
+PASS  Service pages with 500–600 words of main content: 14/14 (range 506–548)
+PASS  City service pages: 42 pages, 334–419 words of main content
+PASS  Near-duplicate check (5-word shingle overlap) across all 42 city pages: highest 44% (services/ductless-mini-splits/canton/index.html vs services/ductless-mini-splits/troy/index.html)
+PASS  No leftover template tokens or placeholder text (0 found)
+PASS  Unsupported-claim scan (best, #1, guarantee, awards, years, star ratings): 0 hits
+PASS  Website demo banner on every page while demo_mode is on (71/71)
+PASS  Footer links to Privacy, Terms and Cookie pages on every page (0 missing)
+PASS  Text contrast ≥ 4.5:1 for all key colour pairs: body text 17.6, muted text 8.1, muted on card 7.5, accent text 8.6, accent on card 8.0, button text on accent 8.2, heat text 6.9, heat on card 6.4, dark text on heat 6.6, paper text 16.1, paper muted 6.2, paper eyebrow 4.6, paper heat 4.6, CTA band text 8.2, form error 8.1, prose text 13.8, demo note 13.4
+PASS  Only offered services have pages (14 service folders, 0 not offered: )
+PASS  No links to services that are not offered (0 pages with such links)
+PASS  No sentences mention services this client does not offer
+PASS  Opening animation overlay + once-per-session check on exactly the 69 intended pages (never 404 or thank-you)
+PASS  Instant estimate page: prices, home sizes and tiers written from site.config.json, estimate.js loaded, lead form with estimate fields
+PASS  Home hero system picker submits to the instant estimate (works without JavaScript)
+
+31 passed, 0 warnings, 0 failed
